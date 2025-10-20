@@ -1,0 +1,38 @@
+/* #canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at center, #05081c 0%, #05081c 100%);
+} */
+
+
+
+
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Ensure content is visible above the canvas */
+[data-theme="dark"] .portfolio,
+[data-theme="light"] .portfolio {
+  position: relative;
+  z-index: 1;
+}
+
+/* Theme-specific canvas background */
+[data-theme="dark"] #canvas {
+  background: radial-gradient(circle at center, #000000 0%, #000000 100%);
+}
+
+/* [data-theme="light"] #canvas {
+  background: radial-gradient(circle at center,  #FFFFFF,100%,  #FFFFFF, 100%);
+} */

@@ -1,6 +1,6 @@
 import React from 'react'
 // import Home,{Body,Contact} from './Portfolio/Home'
-import Portfolio from './Portfolio'
+import Portfolio from './Portfolio/Portfolio'
 
 
 const App = () => {
