@@ -135,7 +135,7 @@ const AboutSection = ({ bio, location, isLoaded }) => (
         <div className="about-text">
           <h3>My Journey</h3>
           <p className="AboutUs-paragraph">
-            Hi, I'm Kishan Chaudhary, an AI student and full-stack developer with a passion for blending cutting-edge technology with real-world impact. My journey began with a fascination for AI's potential to mimic human intelligence, leading me to master tools like Python, TensorFlow, and OpenCV, while also crafting seamless web experiences using HTML, CSS, JavaScript, and React.
+           Hi, I'm Kishan Chaudhary, an AI student and full-stack developer with a passion for blending cutting-edge technology with real-world impact. My journey began with a fascination for AI's potential to mimic human intelligence, leading me to master tools like Python, TensorFlow, and OpenCV, while also crafting seamless web experiences using HTML, CSS, JavaScript, and React.
           </p>
           <p className="AboutUs-paragraph">
             From building a mock interview platform to designing a sleek UI for a surgical instruments website during college projects, I've honed my skills in full-stack development, creating intuitive and dynamic applications. Currently, I'm diving into the world of IoT and computer vision, working on an innovative robotic hand that combines real-time vision processing with IoT connectivity—a project that feels like bringing science fiction to life.

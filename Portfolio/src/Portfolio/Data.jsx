@@ -47,7 +47,7 @@ export const projects = [
   // {
   //   id: 2,
   //   title: "Task Management App",
-  //   description: "Collaborative project management tool with real-time updates",
+  //   description: "",
   //   technologies: ['Vue.js', 'Express', 'Socket.io', 'PostgreSQL'],
   //   image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop",
   //   github: "#",

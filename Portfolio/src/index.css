@@ -20,6 +20,7 @@
   --shadow-light: #000000;
   --invert-filter-light: invert(0);
   --button-secondary-light: linear-gradient(135deg, #06b6d4, #3b82f6);
+   --header1-light: linear-gradient(135deg, #06b6d4, #3b82f6);
 
   /* Dark Theme Colors */
   --background-image-dark: #000000;
@@ -33,6 +34,8 @@
   --shadow-dark: #ffffff;
   --invert-filter-dark: invert(1);
   --button-secondary-dark: #000000;
+  --header1-dark: #ffffff;
+
 
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, #3b82f6, #8b5cf6);
@@ -80,6 +83,8 @@
   --shadow-color: var(--shadow-light);
   --invert-filter: var(--invert-filter-light);
   --button-primary: var( --button-secondary-light) ;
+  --header1: var( --header1-light) ;
+  
 }
 
 [data-theme="dark"] {
@@ -94,6 +99,7 @@
   --shadow-color: var(--shadow-dark);
   --invert-filter: var(--invert-filter-dark);
   --button-primary: var( --button-secondary-dark) ;
+  --header1: var( --header1-dark) ;
 }
 
 body {
@@ -136,7 +142,7 @@ p {
 }
 
 .gradient-text {
-  background: var( --gradient-primary);
+  background: var( --header1);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -788,11 +794,14 @@ section {
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
+
+
+ 
 }
 
 .skill-card {
@@ -890,8 +899,10 @@ section {
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+  display: flex;
+  flex-direction: column;
   gap: var(--spacing-xl);
   margin-top: var(--spacing-xl);
 }
