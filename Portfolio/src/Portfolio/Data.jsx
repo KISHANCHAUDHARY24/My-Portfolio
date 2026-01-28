@@ -1,17 +1,19 @@
 // Data Objects
 export const personalInfo = {
   name: "Kishan Chaudhary",
-  title: "Frontend Developer",
+  title: "Backend Developer | Python & Django Specialist",
   location: "Kathmandu, Nepal",
   email: "kncy24@gmail.com",
   phone: "9746592097",
-  bio: "As a front-end developer and AI enthusiast, I sculpt captivating web experiences with HTML, CSS, and JavaScript. My curiosity for artificial intelligence drives me to explore innovative algorithms, blending tech and creativity. I’m dedicated to crafting intuitive interfaces that spark connection and inspire progress."
+  bio: "I am a Backend Developer specializing in Python and Django, focused on building scalable, secure, and efficient server-side applications. I have hands-on experience in API development, database design, authentication systems, and backend architecture. I enjoy solving complex problems and transforming business requirements into reliable software solutions."
 };
 
 export const skills = {
   languages: [
-    { name: 'JavaScript', percentage: 90 },
     { name: 'Python', percentage: 85 },
+    { name: 'java', percentage: 50 },
+    { name: 'JavaScript', percentage: 50 },
+    { name: 'PHP', percentage: 70 },
     { name: 'TypeScript', percentage: 80 },
     { name: 'HTML', percentage: 95 },
     { name: 'CSS', percentage: 95 },
@@ -25,9 +27,16 @@ export const skills = {
     { name: 'NumPy', percentage: 85 },
     { name: 'Pandas', percentage: 85 },
     { name: 'OpenCV', percentage: 80 },
+    { name: 'Matplotlib', percentage: 60 },
+    { name: 'TensorFlow', percentage: 60 },
+    { name: 'Scikit-learn', percentage: 50 },
   ],
   tools: [
     { name: 'Git', percentage: 90 },
+    { name: 'XAMPP', percentage: 70 },
+    { name: 'Eclipse', percentage: 70 },
+    { name: 'VS Code', percentage: 80 },
+    { name: 'Blender', percentage: 40 },
   ],
   other: [
     { name: 'IoT', percentage: 75 },
