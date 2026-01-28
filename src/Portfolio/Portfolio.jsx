@@ -5,17 +5,15 @@ import { personalInfo, skills, projects } from './Data.jsx';
 
 
 import LogoSvg from '../assets/K.svg';
-import GitHubIcon from '../assets/github.png';
+import gitHubIcon from '../assets/github.png';
 import LinkedinIcon from '../assets/Linkedin.png';
-import TwitterIcon from '../assets/twitter.png';
+import twitterIcon from '../assets/twitter.png';
 import MoonIcon from '../assets/MoonIcon.png';
 import SunIcon from '../assets/SunIcon.png';
 import MyPicture from '../assets/MyPicture.jpg';
-import LocationIcon from '../assets/location.png';
+import locationIcon from '../assets/location.png';
 import EmailIcon from '../assets/Email.png';
-import CallIcon from '../assets/call.png';
-
-
+import callIcon from '../assets/call.png';
 
 
 
@@ -47,13 +45,13 @@ const Header = ({ scrollToSection, toggleDarkMode, isDarkMode }) => (
       </nav>
       <nav className="side-nav-social-link-container">
         <a href="https://github.com/KISHANCHAUDHARY24" className="side-nav-social-link">
-          <img src={GitHubIcon} alt="GitHub" className="side-nav-social-link-img" />
+          <img src={gitHubIcon} alt="GitHub" className="side-nav-social-link-img" />
         </a>
         <a href="https://www.linkedin.com/in/kishan-c-ab8450326/" className="side-nav-social-link">
           <img src={LinkedinIcon} alt="LinkedIn" className="side-nav-social-link-img" />
         </a>
         <a href="https://x.com/KRITATYAGHYA24?t=9m3j48WuHAM9Aw5Th4zb7w&s=09" className="side-nav-social-link">
-          <img src={TwitterIcon} alt="Twitter" className="side-nav-social-link-img" />
+          <img src={twitterIcon} alt="Twitter" className="side-nav-social-link-img" />
         </a>
         <button onClick={toggleDarkMode} className="theme-toggle">
           {isDarkMode ? (
@@ -74,13 +72,13 @@ const Footer = ({ name }) => (
       <p className="footer-tagline">Building the future, one line of code at a time.</p>
       <div className="social-links">
         <a href="https://github.com/KISHANCHAUDHARY24" className="social-link">
-          <img src={GitHubIcon} alt="GitHub" className="socialmedia-icon" />
+          <img src={gitHubIcon} alt="GitHub" className="socialmedia-icon" />
         </a>
         <a href="https://www.linkedin.com/in/kishan-c-ab8450326/" className="social-link">
-          <img src={TwitterIcon} alt="LinkedIn" className="socialmedia-icon" />
+          <img src={LinkedinIcon} alt="LinkedIn" className="socialmedia-icon" />
         </a>
         <a href="https://x.com/KRITATYAGHYA24?t=9m3j48WuHAM9Aw5Th4zb7w&s=09" className="social-link">
-          <img src={TwitterIcon} alt="Twitter" className="socialmedia-icon" />
+          <img src={twitterIcon} alt="Twitter" className="socialmedia-icon" />
         </a>
       </div>
       <p className="footer-tagline">© 2025 {name}. All rights reserved.</p>
@@ -159,7 +157,7 @@ const AboutSection = ({ bio, location, isLoaded }) => (
           <p className="AboutUs-paragraph">I follow best practices in version control (Git), structured coding, and modular design, and I enjoy solving complex problems that sit at the intersection of data, systems, and software engineering. My goal is to contribute as a Data Scientist or Python Backend Developer, where I can apply data-driven thinking to build impactful and scalable solutions.</p>
           <div className="contact-info">
             <span>
-              <img src="src/assets/location.png" alt="location Icon" className="socialmedia-icon" />
+              <img src={locationIcon} alt="location Icon" className="socialmedia-icon" />
               {location}
             </span>
           </div>
@@ -394,15 +392,15 @@ const ContactSection = ({ email, phone, location, isLoaded }) => {
             
             <div className="contact-details">
               <div className="contact-item">
-                <img src="src/assets/Email.png" alt="Email" className="socialmedia-icon" />
+                <img src={EmailIcon} alt="Email" className="socialmedia-icon" />
                 <span>{email}</span>
               </div>
               <div className="contact-item">
-                <img src="src/assets/call.png" alt="Call icon" className="socialmedia-icon" />
+                <img src={callIcon} alt="Call icon" className="socialmedia-icon" />
                 <span>{phone}</span>
               </div>
               <div className="contact-item">
-                <img src="src/assets/location.png" alt="Location Icon" className="socialmedia-icon" />
+                <img src={locationIcon} alt="Location Icon" className="socialmedia-icon" />
                 <span>{location}</span>
               </div>
             </div>
