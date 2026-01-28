@@ -4,6 +4,18 @@ import { personalInfo, skills, projects } from './Data.jsx';
 
 
 
+import LogoSvg from '../assets/K.svg';
+import GitHubIcon from '../assets/github.png';
+import LinkedinIcon from '../assets/Linkedin.png';
+import TwitterIcon from '../assets/twitter.png';
+import MoonIcon from '../assets/MoonIcon.png';
+import SunIcon from '../assets/SunIcon.png';
+import MyPicture from '../assets/MyPicture.jpg';
+import LocationIcon from '../assets/location.png';
+import EmailIcon from '../assets/Email.png';
+import CallIcon from '../assets/call.png';
+
+
 
 
 
@@ -14,13 +26,14 @@ const scrollToSection = (sectionId) => {
 
 // Reusable Components
 const Logo = ({ name }) => (
-  <div className="logo" >
-    <a href={'home'} class = 'logo-link'>
-      <img src="src/assets/K.svg" alt="logo" className="logo-image" />
-      <span className='logo-name'>{name}</span>
+  <div className="logo">
+    <a href="#home" className="logo-link">
+      <img src={LogoSvg} alt="logo" className="logo-image" />
+      <span className="logo-name">{name}</span>
     </a>
   </div>
 );
+
 
 const Header = ({ scrollToSection, toggleDarkMode, isDarkMode }) => (
   <header className="header">
@@ -34,19 +47,19 @@ const Header = ({ scrollToSection, toggleDarkMode, isDarkMode }) => (
       </nav>
       <nav className="side-nav-social-link-container">
         <a href="https://github.com/KISHANCHAUDHARY24" className="side-nav-social-link">
-          <img src="src/assets/github.png" alt="GitHub" className="side-nav-social-link-img" />
+          <img src={GitHubIcon} alt="GitHub" className="side-nav-social-link-img" />
         </a>
         <a href="https://www.linkedin.com/in/kishan-c-ab8450326/" className="side-nav-social-link">
-          <img src="src/assets/Linkedin.png" alt="LinkedIn" className="side-nav-social-link-img" />
+          <img src={LinkedinIcon} alt="LinkedIn" className="side-nav-social-link-img" />
         </a>
         <a href="https://x.com/KRITATYAGHYA24?t=9m3j48WuHAM9Aw5Th4zb7w&s=09" className="side-nav-social-link">
-          <img src="src/assets/twitter.png" alt="Twitter" className="side-nav-social-link-img" />
+          <img src={TwitterIcon} alt="Twitter" className="side-nav-social-link-img" />
         </a>
         <button onClick={toggleDarkMode} className="theme-toggle">
           {isDarkMode ? (
-            <img src="src/assets/MoonIcon.png" alt="Half Moon icon" className="toggle-icon-moon" />
+            <img src={MoonIcon} alt="Half Moon icon" className="toggle-icon-moon" />
           ) : (
-            <img src="src/assets/SunIcon.png" alt="Sun icon" className="toggle-icon-sun" />
+            <img src={SunIcon} alt="Sun icon" className="toggle-icon-sun" />
           )}
         </button>
       </nav>
@@ -61,13 +74,13 @@ const Footer = ({ name }) => (
       <p className="footer-tagline">Building the future, one line of code at a time.</p>
       <div className="social-links">
         <a href="https://github.com/KISHANCHAUDHARY24" className="social-link">
-          <img src="src/assets/github.png" alt="GitHub" className="socialmedia-icon" />
+          <img src={GitHubIcon} alt="GitHub" className="socialmedia-icon" />
         </a>
         <a href="https://www.linkedin.com/in/kishan-c-ab8450326/" className="social-link">
-          <img src="src/assets/Linkedin.png" alt="LinkedIn" className="socialmedia-icon" />
+          <img src={TwitterIcon} alt="LinkedIn" className="socialmedia-icon" />
         </a>
         <a href="https://x.com/KRITATYAGHYA24?t=9m3j48WuHAM9Aw5Th4zb7w&s=09" className="social-link">
-          <img src="src/assets/twitter.png" alt="Twitter" className="socialmedia-icon" />
+          <img src={TwitterIcon} alt="Twitter" className="socialmedia-icon" />
         </a>
       </div>
       <p className="footer-tagline">© 2025 {name}. All rights reserved.</p>
@@ -97,7 +110,7 @@ const HeroSection = ({ name, title, bio, scrollToSection, isLoaded }) => (
           <p className="hero-bio">{bio}</p>
           <div className="hero-actions">
             <a
-              href="public/Kishan-Chaudhary-FlowCV-Resume-20250404 (1)-1.pdf (1).pdf"
+              href="Kishan-Chaudhary-FlowCV-Resume-20250404 (1)-1.pdf (1).pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-hero-section"
@@ -111,7 +124,7 @@ const HeroSection = ({ name, title, bio, scrollToSection, isLoaded }) => (
         </div>
         <div className="my-picture-container">
           <div className='pic-container-ring'>
-            <img src="src/assets/MyPicture.jpg" alt="My picture" className="my-picture" />
+            <img src={MyPicture} alt="My picture" className="my-picture" />
           </div>
           
         </div>
