@@ -14,6 +14,7 @@ import MyPicture from '/public/MyPicture.jpg';
 import locationIcon from '/public/location.png';
 import EmailIcon from '/public/Email.png';
 import callIcon from '/public/call.png';
+import MockupInterview from '/public/MockupInterview.png';
 
 
 
@@ -208,7 +209,7 @@ const SkillsSection = ({ skills, isLoaded }) => (
 const ProjectCard = ({ project, delay, isLoaded }) => (
   <AnimatedSection delay={delay} isLoaded={isLoaded}>
     <div className="project-card">
-      <img src={project.image} alt={project.title} className="project-image" />
+      <img src='/public/MockupInterview.png' alt={project.title} className="project-image" />
       <div className="project-content">
         <h3>{project.title}</h3>
         <p>{project.description}</p>
