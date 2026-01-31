@@ -4,16 +4,16 @@ import { personalInfo, skills, projects } from './Data.jsx';
 
 
 
-import LogoSvg from '../assets/K.svg';
-import gitHubIcon from '../assets/github.png';
-import LinkedinIcon from '../assets/Linkedin.png';
-import twitterIcon from '../assets/twitter.png';
-import MoonIcon from '../assets/MoonIcon.png';
-import SunIcon from '../assets/SunIcon.png';
-import MyPicture from '../assets/MyPicture.jpg';
-import locationIcon from '../assets/location.png';
-import EmailIcon from '../assets/Email.png';
-import callIcon from '../assets/call.png';
+import LogoSvg from '/public/K.svg';
+import gitHubIcon from '/public/github.png';
+import LinkedinIcon from '/public/Linkedin.png';
+import twitterIcon from '/public/twitter.png';
+import MoonIcon from '/public/MoonIcon.png';
+import SunIcon from '/public/SunIcon.png';
+import MyPicture from '/public/MyPicture.jpg';
+import locationIcon from '/public/location.png';
+import EmailIcon from '/public/Email.png';
+import callIcon from '/public/call.png';
 
 
 
@@ -392,7 +392,7 @@ const ContactSection = ({ email, phone, location, isLoaded }) => {
             
             <div className="contact-details">
               <div className="contact-item">
-                <img src={EmailIcon} alt="Email" className="socialmedia-icon" />
+                <img src='/public/Email.png' alt="Email" className="socialmedia-icon" />
                 <span>{email}</span>
               </div>
               <div className="contact-item">
